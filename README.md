@@ -38,7 +38,7 @@ A    9
 ```
 
 hexadecimal is very useful when you want to treat data in units of four
-It's used in images and some files due to convention
+in the world of memory, programming, people tend to count memory bytes using hexadecimal. Partly just by convention, but also partly because it's a little more succinct 
 
 
 
