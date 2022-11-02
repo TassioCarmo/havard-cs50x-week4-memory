@@ -18,5 +18,6 @@ blue, with R: 0, G: 0, and B: 255, and #0000FF
 - Hexadecimal: 16^n
 
 count from 0 to F
+
 0 1 2 3 4 5 6 7 8 9 A B C D E F
 
