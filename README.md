@@ -78,3 +78,12 @@ int main(void)
     printf("%i\n", *p);
 }
 ```
+p takes up 8 bytes, since in modern computer systems, 64 bits are used in order to address the billions of bytes of memory available. With 32 bits, we can only count up to about 4 billion bytes
+
+<img src ="https://cs50.harvard.edu/x/2022/notes/4/p.png">
+
+think of p as pointing at some value in memory:
+
+<img src ="https://cs50.harvard.edu/x/2022/notes/4/pointing.png">
+
+
