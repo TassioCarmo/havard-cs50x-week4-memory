@@ -45,3 +45,7 @@ ny time you see 0x and then a number, that's by convention  signaling to the rea
 
 ## Addresses, pointers
 
+A pointer is just a variable storing an address
+
+<img src= "https://cs50.harvard.edu/x/2022/notes/4/addresses.png">
+
