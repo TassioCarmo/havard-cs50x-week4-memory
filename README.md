@@ -1,1 +1,3 @@
-# cs50x-week4-memory
+# Introduction to Memory
+
+## What did i learn
