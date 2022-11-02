@@ -23,7 +23,9 @@ count from 0 to F
 
 F = 16
 
-FF = 255 
+F     F = 255 
+
+1111 1111 
 
 ```
 16^1  16^0
@@ -35,4 +37,8 @@ A    9
 
 ```
 
+hexadecimal is very useful when you want to treat data in units of four
 It's used in images and some files due to convention
+
+
+
