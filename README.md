@@ -88,4 +88,14 @@ think of p as pointing at some value in memory:
 
 Think as memory as mailboxes in an appartament where each one of the have an address
 
+## Strings
+
+string s is equal to char* s
+
+s is a variable of type string, is just a pointer to a character.
+
+<img src ="https://cs50.harvard.edu/x/2022/notes/4/s_pointer.png">
+
+
+
 
