@@ -67,4 +67,14 @@ int main(void)
 
 ```
 
+ * operator is also the dereference operator, which goes to an address to get the value stored there
 
+```
+int main(void)
+{
+    int n = 50;
+    int *p = &n;
+    printf("%p\n", p);
+    printf("%i\n", *p);
+}
+```
