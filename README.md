@@ -43,5 +43,5 @@ in the world of memory, programming, people tend to count memory bytes using hex
 ny time you see 0x and then a number, that's by convention  signaling to the reader that this is in fact a hexadecimal number. So if it's 0x10, that is not the number 10, that is the hexadecimal number one zero. 
 
 
-
+## Addresses, pointers
 
