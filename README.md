@@ -45,7 +45,14 @@ ny time you see 0x and then a number, that's by convention  signaling to the rea
 
 ## Addresses, pointers
 
-A pointer is just a variable storing an address
+pointer is a variable that stores an address in memory, where some other variable might be stored.
 
 <img src= "https://cs50.harvard.edu/x/2022/notes/4/addresses.png">
+
+In C
+
+& operator can be used to get the address of some variable, as with &n. And the * operator declares a variable as a pointer, as with int *p, indicating that we have a variable called p that points to an int. So, to store the address of a variable n into a pointer p, we would write:
+
+<code>int *p = &n;</code>
+
 
