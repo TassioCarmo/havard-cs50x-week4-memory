@@ -86,4 +86,6 @@ think of p as pointing at some value in memory:
 
 <img src ="https://cs50.harvard.edu/x/2022/notes/4/pointing.png">
 
+Think as memory as mailboxes in an appartament where each one of the have an address
+
 
