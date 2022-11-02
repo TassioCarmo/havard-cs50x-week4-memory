@@ -25,4 +25,14 @@ F = 16
 
 FF = 255 
 
+```
+16^1  16^0
+#    #
+
+A    9
+
+16*10 + 9 = 169
+
+```
+
 It's used in images and some files due to convention
