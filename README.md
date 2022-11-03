@@ -301,3 +301,5 @@ Using pointers instead of using variables, or instead of using the variables the
 
 
 Memory/RAM is basically a huge array of -bits wide bytes
+
+A pointer is nothing more than an address
