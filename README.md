@@ -101,4 +101,8 @@ And s is just the address of the first character of an string, what brings strin
 printf was designed by some human years ago to go to the address that's being passed in-- for instance, s-- and print out character after character after character until it sees the null character backslash zero, and then stop printing it. So that's-- you're getting a lot of functionality for free from %s
 
 
+## Pointer arithmetic
+
+ is the process of applying mathematical operations to pointers, using them just like numbers (which they are
+
 
