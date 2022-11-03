@@ -157,3 +157,23 @@ int main(void)
 you are comparing different things
 
 <img src="https://cs50.harvard.edu/x/2022/notes/4/s_t.png">
+
+### Comparison
+
+```
+int main(void)
+{
+    string s = get_string("s: ");
+
+    string t = s;
+
+    t[0] = toupper(t[0]);
+
+    printf("s: %s\n", s);
+    printf("t: %s\n", t);
+}
+```
+
+<img src="https://cs50.harvard.edu/x/2022/notes/4/s_t_pointing.png">
+
+So when you change one both will be changed
