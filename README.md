@@ -176,4 +176,4 @@ int main(void)
 
 <img src="https://cs50.harvard.edu/x/2022/notes/4/s_t_pointing.png">
 
-So when you change one both will be changed
+So when you change one both will be changed, because they represent the same address
