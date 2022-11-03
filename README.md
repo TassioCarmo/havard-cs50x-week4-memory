@@ -277,3 +277,5 @@ void swap(int *a, int *b)
 }
 
 ```
+
+in C because , functions are isolated from each other. You can pass in values but you get copies of those values. 
