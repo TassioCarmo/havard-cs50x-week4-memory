@@ -309,3 +309,8 @@ Always set the value of a pointer to null if you are not going to use it imedian
 dynamically allocated memory comes from the heap and static come from the stack
 
 always check for null after malloc because it can give you a null if it doesn't find it 
+
+three golden rules
+- Everyblock allocated to malloc must be freed
+- Only free things you "malloced"
+- Never free things more than once
