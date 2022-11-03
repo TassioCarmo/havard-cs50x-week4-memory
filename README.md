@@ -156,4 +156,4 @@ int main(void)
 
 you are comparing different things
 
-<img src="https://cs50.harvard.edu/x/2022/notes/4/s_t_pointing.png">
+<img src="https://cs50.harvard.edu/x/2022/notes/4/s_t.png">
