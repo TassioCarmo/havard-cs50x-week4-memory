@@ -303,4 +303,4 @@ Using pointers instead of using variables, or instead of using the variables the
 Memory/RAM is basically a huge array of -bits wide bytes
 
 A pointer is nothing more than an address
-Always set the value of a pointer to null if you are not going to use it imediantly
+Always set the value of a pointer to null if you are not going to use it imediantly because it's better to have your program to crash than have something you didn't intended 
