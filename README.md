@@ -177,3 +177,28 @@ int main(void)
 <img src="https://cs50.harvard.edu/x/2022/notes/4/s_t_pointing.png">
 
 So when you change one both will be changed, because they represent the same address
+
+
+## Memory allocation
+
+malloc, to allocate some number of bytes in memory. And we’ll use free to mark memory as usable when we’re done with it, so the operating system can do something else with it.
+
+when you allocate memory you must **ALWAYS FREE IT LATER**
+
+```
+int main(void)
+{
+    char *s = get_string("s: ");
+
+    char *t = malloc(strlen(s) + 1);
+
+    strcpy(t, s);
+
+    t[0] = toupper(t[0]);
+
+    printf("s: %s\n", s);
+    printf("t: %s\n", t);
+
+    free(t);
+}
+```
