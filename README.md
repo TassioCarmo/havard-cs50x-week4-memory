@@ -296,3 +296,5 @@ in C because , functions are isolated from each other. You can pass in values bu
 ## Others
 
 When we pass a variable to a function, we're not actually passing the variable to the function, We're passing a copy of that data to the function. The function does something, and maybe we use that value when it gives it back. 
+
+If we use pointers instead of using variables, or instead of using the variables themselves or copies of the variables, we can now pass the variables around between functions in a different way. This means that if we make a change in one function, that change will actually take effect in a different function
