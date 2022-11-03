@@ -205,3 +205,64 @@ int main(void)
 ## Garbage values
 
 When you, the programmer, do not initialize your codes variables to have values, sometimes, who knows what's going to be there. The computer's been doing some other things, there's a bit of work that happens even before your code runs in the computer, so there might be remnants of past ints, chars, strings, floats-- anything else in there and what you're seeing is those garbage values, which is to say you should never forget, as I just did, to initialize the value of some variable. 
+
+ malloc, and dereferencing. The code from the video might look like this in one program:
+ 
+```
+int main(void)
+{   
+    int *x;  
+    int *y; 
+
+    x = malloc(sizeof(int));                    
+
+    *x = 42;
+    *y = 13;    
+
+    y = x;        
+
+    *y = 13;   
+}
+```
+In the first two lines, we declare two pointers. Then, we allocate memory for x, but not y, so we can assign a value to the memory x is pointing to with *x = 42;. But *y = 13; is problematic, since we haven’t allocated any memory for y, and the garbage value there points to some area in memory we likely don’t have access to.
+    We can write y = x; so that y points to the same allocated memory as x, and use *y = 13; to set the value there.
+    
+### SWap
+
+```
+
+void swap(int a, int b);
+
+int main(void)
+{
+    int x = 1;
+    int y = 2;
+
+    printf("x is %i, y is %i\n", x, y);
+    swap(x, y);
+    printf("x is %i, y is %i\n", x, y);
+}
+
+void swap(int a, int b)
+{
+    printf("a is %i, b is %i\n", a, b);
+    int tmp = a;
+    a = b;
+    b = tmp;
+    printf("a is %i, b is %i\n", a, b);
+}
+```
+
+swap function works while we’re inside it.
+
+## Memory Layout
+
+<img src="https://cs50.harvard.edu/x/2022/notes/4/memory_layout.png">
+
+- The machine code section is our compiled program’s binary code. When we run our program, that code is loaded into memory.
+- Just below, or in the next part of memory, are global variables we declared in our program.
+- The heap section is an empty area from where malloc can get free memory for our program to use. As we call malloc, we start allocating memory from the top down.
+-The stack section is used by functions and local variables in our program as they are called, and grows upwards.
+
+If we call malloc for too much memory, we will have a heap overflow, since we end up going past our heap. Or, if we call too many functions without returning from them, we will have a stack overflow, where our stack has too much memory allocated as well.
+
