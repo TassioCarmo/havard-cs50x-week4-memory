@@ -129,3 +129,4 @@ int main(void)
  ```
 
 
+The compiler is smart enough to know that if you add 1 to  pointer, that is the same as saying go one more piece of data-- not just one byte-- so if it's an int, move four. If it's a second int, move eight. If it's a third int, move 12. Pointer arithmetic handles that annoying arithmetic for you so you can just think of this as a number after a number after a number that are back to back to back but not one byte apart, but four bytes apart. 
