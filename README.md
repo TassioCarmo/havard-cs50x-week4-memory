@@ -307,3 +307,5 @@ A pointer is nothing more than an address
 Always set the value of a pointer to null if you are not going to use it imediantly because it's better to have your program to crash than have something you didn't intended 
 
 dynamically allocated memory comes from the heap and static come from the stack
+
+always check for null after malloc because it can give you a null if it doesn't find it 
