@@ -104,5 +104,28 @@ printf was designed by some human years ago to go to the address that's being pa
 ## Pointer arithmetic
 
  is the process of applying mathematical operations to pointers, using them just like numbers (which they are
+ 
+ ```
+ // these are equals because *s is point to the FIRST position
+int main(void)
+{
+    char *s = "HI!";
+    printf("%c\n", *s); 
+    printf("%c\n", *(s + 1));
+    printf("%c\n", *(s + 2));
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+    char *s = "HI!";
+    printf("%c\n", s[0]);
+    printf("%c\n", s[1]);
+    printf("%c\n", s[2]);
+}
+
+
+ ```
 
 
