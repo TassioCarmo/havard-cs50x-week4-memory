@@ -266,3 +266,14 @@ swap function works while we’re inside it.
 
 If we call malloc for too much memory, we will have a heap overflow, since we end up going past our heap. Or, if we call too many functions without returning from them, we will have a stack overflow, where our stack has too much memory allocated as well.
 
+The "right way" of swapping in C
+
+```
+void swap(int *a, int *b)
+{
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+```
