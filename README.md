@@ -292,3 +292,7 @@ void swap(int *a, int *b)
 ```
 
 in C because , functions are isolated from each other. You can pass in values but you get copies of those values. 
+
+## Others
+
+When we pass a variable to a function, we're not actually passing the variable to the function, We're passing a copy of that data to the function. The function does something, and maybe we use that value when it gives it back. 
