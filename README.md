@@ -96,6 +96,9 @@ s is a variable of type string, is just a pointer to a character.
 
 <img src ="https://cs50.harvard.edu/x/2022/notes/4/s_pointer.png">
 
+And s is just the address of the first character of an string
+
+printf was designed by some human years ago to go to the address that's being passed in-- for instance, s-- and print out character after character after character until it sees the null character backslash zero, and then stop printing it. So that's-- you're getting a lot of functionality for free from %s
 
 
 
