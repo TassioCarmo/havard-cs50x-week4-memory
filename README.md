@@ -202,3 +202,6 @@ int main(void)
     free(t);
 }
 ```
+## Garbage values
+
+When you, the programmer, do not initialize your codes variables to have values, sometimes, who knows what's going to be there. The computer's been doing some other things, there's a bit of work that happens even before your code runs in the computer, so there might be remnants of past ints, chars, strings, floats-- anything else in there and what you're seeing is those garbage values, which is to say you should never forget, as I just did, to initialize the value of some variable. 
