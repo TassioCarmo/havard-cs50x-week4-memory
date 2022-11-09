@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
     //Repeatily reading a sample until reaches the end of the file returning 0 when it ends
     while (fread(&buffer, sizeof(buffer), 1, input))
     {
-        //multiples
+        //change volume by multipling the buffer value by the input
         buffer *= factor;
         fwrite(&buffer, sizeof(buffer), 1, output);
     }
