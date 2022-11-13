@@ -62,6 +62,8 @@ In C
 
 <code>int *p = &n;</code>
 
+we can actually see the address with the & operator, which means “get the address of this variable”: 
+
 ```
 #include <stdio.h>
 
@@ -74,7 +76,7 @@ int main(void)
 
 ```
 
- * operator is also the dereference operator, which goes to an address to get the value stored there
+ <code>*</code> operator is also the dereference operator, which goes to an address to get the value stored there
 
 ```
 int main(void)
@@ -99,9 +101,12 @@ Think as memory as mailboxes in an appartament where each one of the have an add
 
 ## Strings
 
-string s is equal to char* s
+string s is nothing more than <code>char* s</code>
 
 s is a variable of type string, is just a pointer to a character.
+
+and can be adress as ![image](https://user-images.githubusercontent.com/31789624/201547400-32c455e5-4b93-4efa-89ff-f5855de77421.png)
+
 
 <img src ="https://cs50.harvard.edu/x/2022/notes/4/s_pointer.png">
 
@@ -138,7 +143,7 @@ int main(void)
  ```
 
 
-The compiler is smart enough to know that if you add 1 to  pointer, that is the same as saying go one more piece of data-- not just one byte-- so if it's an int, move four. If it's a second int, move eight. If it's a third int, move 12. Pointer arithmetic handles that annoying arithmetic for you so you can just think of this as a number after a number after a number that are back to back to back but not one byte apart, but four bytes apart. 
+The compiler is smart enough to know that if you add 1 to a pointer, that is the same as saying go one more piece of data-- not just one byte-- so if it's an int, move four. If it's a second int, move eight. If it's a third int, move 12. Pointer arithmetic handles that annoying arithmetic for you so you can just think of this as a number after a number after a number that are back to back to back but not one byte apart, but four bytes apart. 
 
 an array really can be treated as the address of the first element in that array. The difference is that there's no secret backslash zero anywhere.
 
