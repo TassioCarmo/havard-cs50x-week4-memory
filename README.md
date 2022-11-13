@@ -306,6 +306,87 @@ void swap(int *a, int *b)
 
 in C because , functions are isolated from each other. You can pass in values but you get copies of those values. 
 
+### Algorthms
+
+**JPEG**
+
+Let’s look at a program that opens a file and tells us if it’s a JPEG file, a particular format for image files, with jpeg.c:
+```
+    // Detects if a file is a JPEG
+      
+    #include <stdint.h>
+    #include <stdio.h>
+      
+    typedef uint8_t BYTE;
+      
+    int main(int argc, char *argv[])
+    {
+        // Check usage
+        if (argc != 2)
+        {
+            return 1;
+        }
+      
+        // Open file
+        FILE *file = fopen(argv[1], "r");
+        if (!file)
+        {
+            return 1;
+        }
+      
+        // Read first three bytes
+        BYTE bytes[3];
+        fread(bytes, sizeof(BYTE), 3, file);
+      
+        // Check first three bytes
+        if (bytes[0] == 0xff && bytes[1] == 0xd8 && bytes[2] == 0xff)
+        {
+            printf("Yes, possibly\n");
+        }
+        else
+        {
+            printf("No\n");
+        }
+      
+        // Close file
+        fclose(file);
+    }
+
+```
+
+**Files**
+
+    With the ability to use pointers, we can also open files, like a digital phone book in phonebook.c:
+```
+    // Saves names and numbers to a CSV file
+      
+    #include <cs50.h>
+    #include <stdio.h>
+    #include <string.h>
+      
+    int main(void)
+    {
+        // Open CSV file
+        FILE *file = fopen("phonebook.csv", "a");
+        if (!file)
+        {
+            return 1;
+        }
+      
+        // Get name and number
+        string name = get_string("Name: ");
+        string number = get_string("Number: ");
+      
+        // Print to file
+        fprintf(file, "%s,%s\n", name, number);
+      
+        // Close file
+        fclose(file);
+    }
+
+```
+
+
 ## Others
 
 When we pass a variable to a function, we're not actually passing the variable to the function, We're passing a copy of that data to the function. The function does something, and maybe we use that value when it gives it back. 
