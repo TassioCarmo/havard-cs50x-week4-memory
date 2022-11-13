@@ -195,7 +195,7 @@ So when you change one both will be changed, because they represent the same add
 
 ## Memory allocation
 
-malloc, to allocate some number of bytes in memory. And we’ll use free to mark memory as usable when we’re done with it, so the operating system can do something else with it.
+**malloc**, to allocate some number of bytes in memory. And we’ll use **free** to mark memory as usable when we’re done with it, so the operating system can do something else with it.
 
 when you allocate memory you must **ALWAYS FREE IT LATER**
 
@@ -266,8 +266,7 @@ void swap(int a, int b)
     printf("a is %i, b is %i\n", a, b);
 }
 ```
-
-swap function works while we’re inside it.
+It turns out that the swap function gets passed in copies of variables, a and b, which are local variables that only the surrounding function can access. Changing those values won’t change x and y in the main function: 
 
 ## Memory Layout
 
