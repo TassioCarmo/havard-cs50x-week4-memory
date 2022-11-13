@@ -13,17 +13,24 @@ blue, with R: 0, G: 0, and B: 255, and #0000FF
 
 ## Hexadecimal
 
-- decimal: 10^n
-- Binary: 2^n
-- Hexadecimal: 16^n
-
+ base-16, where there are 16 digits which
+ 
 count from 0 to F
 
 0 1 2 3 4 5 6 7 8 9 A B C D E F
 
+
+- decimal: 10^n
+- Binary: 2^n
+- Hexadecimal: 16^n
+- The values in a computer’s memory are still stored as binary, but this way of representation helps us humans represent larger numeric values with fewer digits needed.
+- With 8 bits in binary, the highest value we can count to is also 255, with 11111111. So two digits in hexadecimal can conveniently represent the value of a byte in binary. (Each digit in hexadecimal, with 16 values, maps to four bits in binary.)
+
 F = 16
 
-F     F = 255 
+8 bits with each digit representing 4 bits
+
+F      F = 255 
 
 1111 1111 
 
