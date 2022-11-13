@@ -58,7 +58,7 @@ pointer is a variable that stores an address in memory, where some other variabl
 
 In C
 
-& operator can be used to get the address of some variable, as with &n. And the * operator declares a variable as a pointer, as with int *p, indicating that we have a variable called p that points to an int. So, to store the address of a variable n into a pointer p, we would write:
+<code>&</code> operator can be used to get the address of some variable, as with &n. And the * operator declares a variable as a pointer, as with int *p, indicating that we have a variable called p that points to an int. So, to store the address of a variable n into a pointer p, we would write:
 
 <code>int *p = &n;</code>
 
@@ -94,6 +94,8 @@ think of p as pointing at some value in memory:
 <img src ="https://cs50.harvard.edu/x/2022/notes/4/pointing.png">
 
 Think as memory as mailboxes in an appartament where each one of the have an address
+
+**Segmentation faults**, where we’ve tried to read or write to memory we don’t have permission to.
 
 ## Strings
 
