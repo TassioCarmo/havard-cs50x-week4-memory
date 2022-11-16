@@ -29,11 +29,11 @@ count from 0 to F
 F = 16
 
 8 bits with each digit representing 4 bits
-
+```
 F      F = 255 
 
 1111 1111 
-
+```
 ```
 16^1  16^0
 #    #
